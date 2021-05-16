@@ -2,7 +2,7 @@
 # Ele é sempre executado ao importar este pacote.
 
 from carbonmail.email_sender import view
-from carbonmail.list_editor.manager import initializer as init_list_editor
+from carbonmail.list_editor.manager import initialize as init_list_editor
 import PySimpleGUI as sg
 from PySimpleGUI import WIN_CLOSED
 
