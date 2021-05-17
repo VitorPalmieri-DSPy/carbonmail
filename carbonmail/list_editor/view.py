@@ -16,12 +16,20 @@ def get_layout():
         inner_element_space(600),
         [
             sg.Text("Selecione a Lista:"),
-            sg.Combo(lista, default_value=lista[1], key="-List-"),
+            sg.Combo(
+                lista,
+                default_value=lista[1],
+                key="-List-",
+            ),
         ],
         [
            sg.Text("Criar uma lista:"),
            sg.In(key="-ListName-"),
-           sg.Button("Criar", key="-Create-", size=(10,1)),
+           sg.Button(
+               "Criar",
+               key="-Create-",
+               size=(10,1),
+            ),
         ],
         [
             sg.Button( 
